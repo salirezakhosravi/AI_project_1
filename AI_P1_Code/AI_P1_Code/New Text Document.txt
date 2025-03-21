@@ -1,0 +1,15 @@
+def countFood(actions):
+    numberOfFoods = 0
+    state = initialState()   ---> the first state of our problem  
+    for action in actions:
+        state = getNextState(state, action)  
+        if isFood(state):  ------> this function is used to detect a food in the state.
+            numberOfFoods += 1
+    return numberOfFoods
+
+
+def getCostFunction(actions):
+    cost = len(actions)  
+    numberOfFoods = countFood(actions)  
+    cost += 10 * numberOfFoods    ---->   we define a cost for eating a food. for example 10.
+    return cost
