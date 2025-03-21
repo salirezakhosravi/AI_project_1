@@ -1,0 +1,1 @@
+I implemented search algorithms like DFS, BFS, UCS, and A* to help Pac-Man navigate mazes. The project involved creating heuristics, running tests, and using Python’s data structures to improve search performance. It was a fun and insightful way to dive into AI and problem-solving!
